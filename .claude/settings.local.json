@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//usr/bin/**)",
+      "Read(//Users/alvaro/miniforge3/**)",
+      "Bash(grep -v \"m$\")",
+      "Bash(python3 -c \"import sys; print\\(sys.executable\\)\")",
+      "Bash(pip3 --version)",
+      "Bash(pip --version)",
+      "Bash(uv --version)"
+    ]
+  }
+}
