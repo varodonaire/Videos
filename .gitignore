@@ -11,3 +11,6 @@ wheels/
 
 # manim cache
 media/
+
+# claude
+.claude/
