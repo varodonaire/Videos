@@ -62,7 +62,7 @@ class MaxMinScene(MovingCameraScene):
 
         graph = axes.plot(f, color=BLUE, x_range=[-2.3, 2.3])
         graph_label = MathTex(r"f(x) = x^3 - 3x + 1", color=BLUE, font_size=26)
-        graph_label.next_to(axes.c2p(1.8, f(1.8)), UP, buff=0.2)
+        graph_label.next_to(axes.c2p(2, f(2)), LEFT, buff=0.2)
 
         self.play(Create(axes), Write(ax_labels), run_time=1.5)
         self.play(Create(graph), run_time=2)
@@ -99,7 +99,7 @@ class MaxMinScene(MovingCameraScene):
         x_max_label = MathTex("x = -1", color=YELLOW, font_size=26)
         x_max_label.next_to(axes.c2p(X_MAX, 0), DOWN, buff=0.25)
         x_min_label = MathTex("x = 1", color=YELLOW, font_size=26)
-        x_min_label.next_to(axes.c2p(X_MIN_PT, 0), DOWN, buff=0.25)
+        x_min_label.next_to(axes.c2p(X_MIN_PT, 0), UP, buff=0.25)
 
         lbl_max = Text("máximo relativo", color=YELLOW, font_size=20)
         lbl_max.next_to(dot_max, UL, buff=0.2)
